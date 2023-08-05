@@ -1,1 +1,32 @@
-
+Algoritmo suma_matrices
+	Si el número de columnas de matriz1 no es igual al número de filas de matriz2,
+        Lanzar una excepción indicando que las matrices no son posibles para la multiplicación.
+	Fin Si
+		
+		Definir f1 como el número de filas de matriz1
+		Definir c1 como el número de columnas de matriz1
+		Definir c2 como el número de columnas de matriz2
+		Crear una matriz result de tamaño f1 x c2 para guardar el resultado final 
+			
+		Función Multiplicacion_recur(i, j, k):
+			Si k es igual a c1,
+				Retornar c1  
+			Fin Si
+			
+			result[i, j] += matriz1[i, k] * matriz2[k, j]
+			Multiplicacion_recur(i, j, k + 1)
+			Multiplicacion_recur(i, j + 1, 0)
+		Fin Función
+		
+		Multiplicacion_recur(0, 0, 0)
+		
+		Retornar result
+	Fin Función
+	
+	// Ejemplo de uso:
+	matriz1 = [[1, 2, 3], [4, 5, 6]]
+	matriz2 = [[7, 8, 9, 10], [11, 12, 13, 14], [15, 16, 17, 18]]
+	resultado = suma_matrices(matriz1, matriz2)
+	
+	Mostrar resultado
+FinAlgoritmo
