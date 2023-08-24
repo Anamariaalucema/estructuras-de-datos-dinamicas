@@ -1,4 +1,4 @@
-Sara franco taborda y Ana maria alucema 
+Ana maria alucema 
 *EJERCICIO 1: Cree una funcion recursiva que resiva un entero y retorne cuantos digitos tiene que son multiplos de 2 y 4(no tener en cuenta el 0):*
 
 Funcion cantidad_digitos_multiplos_dos_y_cuantro(num, contador):
